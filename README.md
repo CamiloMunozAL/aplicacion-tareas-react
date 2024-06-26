@@ -2,6 +2,9 @@
 
 Este proyecto es una aplicación simple de lista de tareas desarrollada en React. Permite al usuario agregar nuevas tareas, marcarlas como completadas o pendientes, eliminar tareas existentes y filtrar las tareas por su estado (todas, completadas, pendientes).
 
+link en vivo:
+https://camilomunozal.github.io/aplicacion-tareas-react/
+
 ## Funcionalidades Principales
 
 - **Agregar Tareas:** Permite al usuario ingresar nuevas tareas que se agregarán a la lista.
