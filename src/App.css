@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, 
+body {
+  color: white;
+  background-color: #1b1b32;
+  font-family: Lato, sans-serif;
+  margin-top: 40px;
+}
+
+h1 {
+  color: #1b1b32;
+  font-size: 25px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.aplicacion-tareas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* Alinear al inicio en dispositivos pequeños */
+  padding: 20px; /* Espaciado interior para dispositivos pequeños */
+}
+
+/* Logo de freeCodeCamp */
+
+.freecodecamp-logo-contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.freecodecamp-logo {
+  width: 100%; /* Ancho máximo del logo */
+  max-width: 400px; /* Máximo ancho para dispositivos grandes */
+  height: auto; /* Altura automática */
+}
+
+/* Listas de Tareas */
+
+.tareas-lista-principal {
+  width: 100%; /* Ancho completo en dispositivos pequeños */
+  max-width: 600px; /* Máximo ancho para dispositivos grandes */
+  min-height: 500px;
+  background-color: #d0d0d5;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 26px;
+}
+
+/* Estilos adicionales para dispositivos pequeños */
+
+@media (min-width: 768px) {
+  .aplicacion-tareas {
+    align-items: center; /* Alinear al centro en dispositivos medianos y grandes */
+  }
+
+  .freecodecamp-logo {
+    width: 400px; /* Tamaño específico para dispositivos medianos y grandes */
+  }
+
+  .tareas-lista-principal {
+    width: 600px; /* Ancho específico para dispositivos medianos y grandes */
+  }
+}
+
+@media (max-width: 767px) {
+  .tareas-lista-principal {
+    padding: 15px; /* Ajuste de padding para dispositivos pequeños */
+    margin: 10px 0; /* Márgenes superior e inferior para dispositivos pequeños */
+  }
+}

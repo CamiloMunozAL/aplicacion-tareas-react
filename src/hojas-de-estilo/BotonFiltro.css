@@ -1,0 +1,35 @@
+/* Estilos para los filtros */
+.filtros {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap; /* Envolver los botones en dispositivos pequeños */
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .filtros button {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    flex: 1; /* Ocupar todo el espacio disponible en dispositivos pequeños */
+    max-width: 150px; /* Ancho máximo para dispositivos grandes */
+  }
+  
+  .filtros button.activo {
+    background-color: #0056b3;
+  }
+  
+  @media (min-width: 768px) {
+    .filtros {
+      flex-wrap: nowrap; /* No envolver los botones en dispositivos medianos y grandes */
+    }
+  
+    .filtros button {
+      width: auto; /* Ancho automático en dispositivos medianos y grandes */
+    }
+  }
+  

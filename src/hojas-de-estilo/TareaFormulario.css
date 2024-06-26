@@ -1,0 +1,55 @@
+/* Estructura Principal */
+
+.tarea-formulario {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Campo de Texto */
+
+.tarea-input {
+  width: 100%; /* Ancho completo en dispositivos pequeños */
+  max-width: 350px; /* Máximo ancho para dispositivos grandes */
+  font-size: 18px;
+  background-color: white;
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px;
+  border: 2px solid #00471b;
+  outline: none;
+  margin-right: 0; /* Espacio derecho ajustado */
+  margin-bottom: 10px; /* Espacio inferior */
+}
+
+/* Boton Agregar Tarea */
+
+.tarea-boton {
+  padding: 16px;
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  background: #00471b;
+  color: #fff;
+  text-transform: capitalize;
+  width: 100%; /* Ancho completo en dispositivos pequeños */
+  max-width: 150px; /* Máximo ancho para dispositivos grandes */
+}
+
+@media (min-width: 768px) {
+
+  .tarea-input {
+    width: auto; /* Ancho automático en dispositivos medianos y grandes */
+    margin-right: 10px; /* Espacio derecho añadido */
+    margin-bottom: 0; /* Sin margen inferior */
+  }
+
+  .tarea-boton {
+    width: auto; /* Ancho automático en dispositivos medianos y grandes */
+    max-width: 150px; /* Máximo ancho para dispositivos grandes */
+  }
+}
